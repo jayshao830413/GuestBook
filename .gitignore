@@ -63,6 +63,12 @@ local.properties
 .builds
 *.dotCover
 
+# Include dlls if they¡¯re in the NuGet packages directory
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
+# Include dlls if they're in the CommonReferences directory
+!*CommonReferences/*.dll
+
 ## TODO: If you have NuGet Package Restore enabled, uncomment this
 #packages/
 
